@@ -1,0 +1,14 @@
+radius = 1;
+theta = linspace(0, 2*pi, 200); 
+x = radius * cos(theta);
+y = radius * sin(theta);
+plot(x, y, 'r--', 'LineWidth', 3);
+axis([-6, 6, -6, 6]);
+axis equal;
+xticks(-6:1:6);
+yticks(-6:1:6);
+title_string = sprintf('Circle with Radius = %d', radius);
+title(title_string);
+xlabel('x');
+ylabel('y');
+grid on;
